@@ -1,0 +1,38 @@
+{
+    "name": "react-blog",
+    "version": "0.1.0",
+   "main": "index.js",
+    "scripts": {
+      "start": "nodemon --watch api --exec node api/index.js",
+      "server": "nodemon api/index.js",
+      "client": "npm start --prefix client",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/toneybrac/youtube-mern-blog-app.git"
+    },
+    "keywords": [
+      "madmam"
+    ],
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+   
+  }
+  
